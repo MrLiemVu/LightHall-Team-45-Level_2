@@ -24,7 +24,7 @@ function App() {
       {isLoggedIn ? (
         <TaskList user={user} />
       ) : (
-        <div>
+        <div className="login-wrapper">
           {currentForm === "login" ? (
             <Login onFormSwitch={toggleForm} setIsLoggedIn={setIsLoggedIn} />
           ) : (
